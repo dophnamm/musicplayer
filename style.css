@@ -1,0 +1,437 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+
+body {
+    display: flex;
+}
+
+#fake-ipX {
+    position: relative;
+    margin: auto;
+    height: 51.25rem;
+    width: 23.75rem;
+    border-radius: 45px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+.wallpaper {
+    background-image: url(./img/end.jpg);
+}
+
+/* HomeScreen */
+#statusbar {
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#statusbar .list-icon {
+    font-size: 18px;
+    color: #fff;
+}
+
+#statusbar .list-icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#body-homescreen{
+    text-align: center;
+    max-width: 250px;
+    margin: auto ;
+}
+
+#body-homescreen .body-img img {
+    width: 100%;
+    margin: 50px auto 40px;
+}
+
+#body-homescreen .content-homescreen {
+    font-family: 'Poppins';
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+#body-homescreen .des-homescreen {
+    color: #0c5576;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+#footer-homescreen {
+    text-align: center;
+}
+
+#footer-homescreen .start-btn {
+    background-color: #f8dad0;
+    width: 150px;
+    padding: 10px 25px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#footer-homescreen .start-btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#footer-homescreen .start-btn p {
+    font-size: 18px;
+    color: #001c44;
+    font-family: 'Poppins';
+}
+
+.start-btn p .icon-btn {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.login-form {
+    font-size: 18px;
+    margin: 16px;
+    cursor: pointer;
+    color: #fff9ec;
+}
+
+.login-form a {   
+    font-family: 'Poppins';
+    color: #fff9ec;
+}
+
+.login-form .login-icon {
+    margin: 0 4px;
+}
+
+/* Player Music */
+#player {
+    position: absolute;
+    bottom: 0;
+    height: 86%;
+    width: 100%;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #fdfaf2;
+    transform: translateY(100%);
+    transition: all .8s ease;
+    overflow-y: scroll;
+}
+
+#player::-webkit-scrollbar {
+    width: 0px;
+}
+
+#player.active {
+    transform: translateY(0%);
+    transition: all .8s ease;
+}
+
+#player .line  {
+    border: 2px solid rgba(83, 83, 83, 0.733);
+    background-color: rgba(83, 83, 83, 0.733);
+    border-radius: 10px;
+    width: 40px;
+    margin: 16px auto;
+    padding: 0px 18px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.line:hover {
+}
+
+#player .dashboard {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+.dashboard .cd {
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+.cd-thumb {
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.about{
+    margin: 31px 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+
+.about-cd .title {
+    margin-bottom: 4px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.about-cd .author {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.body .author {
+    opacity: 0.5;
+}
+
+.about .ulike {
+    display: flex;
+    opacity: 0.1;
+    font-size: 22px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ulike .icon-like.active {
+    color: #fd0825;
+    opacity: 1;
+}
+
+.control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 12px;
+}
+  
+
+.control .btn.active {
+    color: #908cb1;
+    opacity: 1;
+}
+
+
+.control .btn-repeat,
+.control .btn-random {
+    font-size: 24px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.control .btn-prev,
+.control .btn-next {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.control .btn-toggle-play {
+    font-size: 75px;
+    color: #fcb1a6;
+    cursor: pointer;
+}
+
+#player .icon-pause {
+    display: none;
+}
+  
+#player.playing .icon-pause {
+    display: inline-block;
+}
+  
+#player.playing .icon-play {
+    display: none;
+}
+
+.progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #ffdccc;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.progress::-webkit-slider-thumb {
+    width: 12px;
+    height: 6px;
+    cursor: pointer;
+}
+
+/* Play List */
+.playlist {
+    padding: 12px;
+}
+.song {
+    display: flex;
+    font-family: 'Poppins';
+    margin-bottom: 8px;
+    background-color: #ffdccc;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
+    border-radius: 14px;
+}
+
+.song.active {
+    background-color: #fb6376;
+}
+
+.song .thumb {
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    background-image: url(./assets/img/img1.jpg);
+    border-radius: 50%;
+    margin: 12px 8px;
+}
+
+.song .body {
+    flex: 1 1 0%;
+    padding: 12px 5px;;
+}
+
+.body .title{
+    margin-bottom: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.body .author {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.song .option {
+    display: flex;
+    margin: auto;
+    padding: 0 8px;
+    font-size: 24px;
+    /* padding: 21px 8px; */
+}
+
+/* Login Form */
+#login{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    top: 0;
+    background-color: #fff9ec;
+    border-radius: 45px;
+    transform: translateX(101%);
+    transition: all .8s ease;
+}
+
+#login.active {
+    transform: translateX(0%);
+    transition: all .8s ease;
+}
+
+.login-header{
+    margin: 46px 40px 20px;
+    font-size: 30px;
+    color: #001c44;
+}
+
+.login-header img {
+    width: 15%;
+    cursor: pointer;
+}
+
+.login-header img:hover {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.login-header .login-icon {
+    cursor: pointer;
+}
+
+#login .body-img img {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+#login .login-container {
+    margin: 14px;
+    font-family: 'Poppins';
+}
+
+.login-container .login-desc {
+    padding: 0 24px;
+}
+
+.login-desc .login-content {
+    font-size: 34px;
+    margin-bottom: 4px;
+}
+
+.login-desc .login-title {
+    font-size: 24px;
+}
+
+.input-div {
+    display: flex;
+    margin: 15px 30px;
+    padding: 15px 8px;
+    border: 2px solid #d9d9d9;
+    border-radius: 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Poppins';
+}
+
+.icon-input {
+    font-size: 20px;
+    margin: 0 14px;
+}
+
+.login-footer {
+    margin: 50px auto 16px;
+}
+
+.login-forget {
+    display: inline-flex;   
+    transform: translateX(16%);
+}
+
+.login-forget p {
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.login-btn {
+    display: flex;
+}
+
+.login-btn button{
+    outline: none;
+    background-color: #f8dad0;
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+    padding: 18px 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: auto;
+}
+
+.login-btn button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

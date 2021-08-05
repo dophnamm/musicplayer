@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List</title>
+    <link rel="shortcut icon" href="./img/music-icon-ico-25.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div id="fake-ipX" class="wallpaper">
+       <div id="homescreen">
+           <div id="statusbar">
+               <div class="list-icon">
+                   <lord-icon
+                   src="https://cdn.lordicon.com/phtfmmnb.json"
+                   trigger="loop"
+                   colors="primary:#121331,secondary:#08a88a">
+               </lord-icon>
+               </div>
+               <div class="list-icon">
+                   <lord-icon
+                       src="https://cdn.lordicon.com/msoeawqm.json"
+                       trigger="loop"
+                       colors="primary:#121331,secondary:#08a88a">
+                   </lord-icon>
+               </div>
+           </div>
+           <div id="body-homescreen">
+               <div class="body-img">
+                   <img src="./img/img-removebg.png" alt="">
+               </div>
+               <h3 class="content-homescreen">
+                   Spending Time
+                   <br>
+                       with Yourself
+               </h3>
+               <p class="des-homescreen">
+                   Star choosing yourself daily and doing what feels right for you .
+               </p>
+           </div>
+           <div id="footer-homescreen">
+                <div class="start-btn">
+                    <p>Start <i class="icon-btn fas fa-chevron-up"></i> </p>
+                </div>
+                <div class="login-form">
+                    <a href="#">Login</a>
+                    <i class="fas fa-user login-icon"></i>
+                </div>
+           </div>
+       </div>
+       <!-- Player Music  -->
+       <div id="player">
+           <div class="line">
+           </div>
+           <div class="dashboard">
+                <!-- Header CD -->
+                <div class="cd">
+                    <div class="cd-thumb">
+                    </div>
+                </div>
+
+                <!-- Body cd -->
+                <div class="about">
+                    <div class="about-cd">
+                        <h3 class="title">Heartbreak Anniversary</h3>
+                        <p class="author">Giveon</p>
+                    </div>
+                    <div class="ulike">
+                        <i class="fas fa-heart icon-like"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class='bx bx-reset'></i>
+                    </div>
+
+                    <div class="btn btn-prev">
+                        <i class='bx bx-skip-previous'></i>
+                    </div>
+
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause-circle icon-pause"></i>
+                        <i class="fas fa-play-circle icon-play"></i>
+                    </div>
+
+                    <div class="btn btn-next">
+                        <i class='bx bx-skip-next' ></i>
+                    </div>
+
+                    <div class="btn btn-random">
+                        <i class='bx bx-transfer' ></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+                <audio id="audio" src=""></audio>
+           </div>
+
+           <div class="playlist">
+                
+            </div>
+       </div>
+       <div id="login">
+           <div class="login-header">
+                <!-- <i class="fas fa-chevron-left login-icon"></i>  -->
+                <img id="icon-back" src="./img/sign-out.png" alt="">
+           </div>
+           <div class="body-img">
+                <img src="./img/boy.svg" alt="">
+            </div>
+            <div class="login-container">
+                <div class="login-desc">
+                    <h3 class="login-content">
+                        Let's sign you in.
+                    </h3>
+                    <p class="login-title">
+                        Welcome back.
+                        <br>
+                        You've been missed!
+                    </p>
+                </div>
+                <div class="input-div">
+                    <i class="fas fa-user-astronaut icon-input"></i>
+                    <input class="input" type="text" placeholder="Email or username">
+                </div>
+                <div class="input-div">
+                    <i class="fas fa-fingerprint icon-input"></i>
+                    <input class="input" type="password" placeholder="Password">
+                </div>
+
+                <div class="login-footer">
+                    <div class="login-forget">
+                            <p>Don't have on account?</p>
+                            <a href="#">Register</a>
+                    </div>
+                    <div class="login-btn">
+                        <button>Sign in</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>
